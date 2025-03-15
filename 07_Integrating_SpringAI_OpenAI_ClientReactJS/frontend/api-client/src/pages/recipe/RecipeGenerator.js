@@ -52,7 +52,7 @@ function RecipeGenerator(){
                 placeholder="Enter dietary restrictions"
             />
 
-            <button onClick={createRecipe}>Ask AI</button>
+            <button onClick={createRecipe}>Generate Recipe</button>
             <div className="output">
                 <ReactMarkdown>{recipe}</ReactMarkdown>
             </div>
