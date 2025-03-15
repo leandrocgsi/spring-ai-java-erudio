@@ -6,7 +6,7 @@ function ImageGenerator(){
 
     const [prompt, setPrompt] = useState('');
     const [quality, setQuality] = useState('hd');
-    const [n, setN] = useState('1');
+    const [n, setN] = useState('2');
     const [height, setHeight] = useState('1024');
     const [width, setWidth] = useState('1024');
     const [imageUrls, setImageUrls] = useState([]);
