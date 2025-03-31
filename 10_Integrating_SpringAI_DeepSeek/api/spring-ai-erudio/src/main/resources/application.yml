@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: spring-ai-erudio
+  ai:
+    openai:
+      api-key: ${DEEP_SEEK_API_KEY}
+      base-url: https://api.deepseek.com/
+      chat:
+        options:
+          model: "deepseek-chat"
