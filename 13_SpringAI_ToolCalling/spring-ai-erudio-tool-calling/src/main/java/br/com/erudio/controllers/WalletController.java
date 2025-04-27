@@ -7,8 +7,11 @@ import org.springframework.ai.chat.client.advisor.SimpleLoggerAdvisor;
 import org.springframework.ai.chat.prompt.PromptTemplate;
 import org.springframework.ai.model.tool.ToolCallingChatOptions;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.Map;
 
 @RestController
 @RequestMapping("/ai")
@@ -55,5 +58,18 @@ public class WalletController {
             .tools(stockTools, walletTools)
             .call()
             .content();
+    }
+
+    @GetMapping("/highest-day/{days}")
+    String calculateHighestWalletValue(@PathVariable int days) {
+        PromptTemplate template = new PromptTemplate("""
+            On which day during last {days} days my wallet had the highest value in dollars based on the historical daily stock prices?
+            To improve readability, add tables and line breaks when deemed necessary.
+            """);
+
+        return this.chatClient.prompt(template.create(Map.of("days", days)))
+                .tools(stockTools, walletTools)
+                .call()
+                .content();
     }
 }
