@@ -4,7 +4,6 @@ import br.com.erudio.api.DailyShareQuote;
 import br.com.erudio.api.DailyStockData;
 import br.com.erudio.api.StockData;
 import br.com.erudio.api.StockResponse;
-import br.com.erudio.services.StockService;
 import br.com.erudio.settings.APISettings;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
