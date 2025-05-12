@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: spring-ai-erudio-claude-mcp
+  ai:
+    mcp:
+      server:
+        name: spring-ai-erudio-claude-mcp
+        version: 0.0.1
+  main:
+    web-application-type: none
+    # NOTE: You must disable the banner and the console logging
+    # to allow the STDIO transport to work !!!
+    banner-mode: off
+logging:
+  pattern:
+    console:
+    #console: "%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"
+  #file:
+    #name: logs/erudio.log

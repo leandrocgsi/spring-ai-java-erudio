@@ -1,0 +1,4 @@
+2025-05-11T19:50:00.426-03:00  INFO 40220 --- [spring-ai-erudio-claude-mcp] [main] br.com.erudio.Startup                    : Starting Startup using Java 21.0.1 with PID 40220 (D:\Code\Java\spring-ai-java-erudio\15_MCP_Claude\spring-ai-erudio-claude-mcp\target\classes started by leand in D:\Code\Java\spring-ai-java-erudio\15_MCP_Claude\spring-ai-erudio-claude-mcp)
+2025-05-11T19:50:00.428-03:00  INFO 40220 --- [spring-ai-erudio-claude-mcp] [main] br.com.erudio.Startup                    : No active profile set, falling back to 1 default profile: "default"
+2025-05-11T19:50:01.338-03:00  INFO 40220 --- [spring-ai-erudio-claude-mcp] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Registered tools: 2, notification: true
+2025-05-11T19:50:01.523-03:00  INFO 40220 --- [spring-ai-erudio-claude-mcp] [main] br.com.erudio.Startup                    : Started Startup in 1.617 seconds (process running for 1.968)
